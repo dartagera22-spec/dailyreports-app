@@ -20,13 +20,15 @@ import { getFirestore, collection, onSnapshot, addDoc, deleteDoc, doc, enableInd
 // ==========================================
 let app, auth, db, appId;
 try {
-  const firebaseConfig = {
-VITE_FIREBASE_API_KEY="AIzaSyA6hU6L-OC0tcBgwLNe8R8uh1SDQMZWruY"
-VITE_FIREBASE_AUTH_DOMAIN="device-streaming-5484e59f.firebaseapp.com"
-VITE_FIREBASE_PROJECT_ID="device-streaming-5484e59f"
-VITE_FIREBASE_STORAGE_BUCKET="device-streaming-5484e59f.firebasestorage.app"
-VITE_FIREBASE_MESSAGING_SENDER_ID="919090158324"
-VITE_FIREBASE_APP_ID="1:919090158324:web:87809df26c349b004d9ca1"}
+ const firebaseConfig = {
+  apiKey: "AIzaSyBs7V71f8G_wcn4mvm0ydemfmzkRYiCCfg",
+  authDomain: "daily-reports-app-4b891.firebaseapp.com",
+  projectId: "daily-reports-app-4b891",
+  storageBucket: "daily-reports-app-4b891.firebasestorage.app",
+  messagingSenderId: "320642057710",
+  appId: "1:320642057710:web:82ab4047df64745872baff",
+  measurementId: "G-CJYR6S1HFB"
+};
   app = initializeApp(firebaseConfig);
   auth = getAuth(app);
   db = getFirestore(app);
